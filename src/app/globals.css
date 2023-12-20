@@ -26,3 +26,30 @@ h1 {
   font-size: 2rem;
   font-weight: 900;
 }
+
+/* Survey Forms Styles */
+
+.sd-root-modern > span.sv-string-viewer {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 900;
+}
+.sd-input {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.sd-container-modern {
+  background-color: #fff;
+}
+
+.sd-element--with-frame,
+.sd-element,
+.sd-question,
+.sd-row__question,
+.sd-question--title-top,
+.sd-row__question--small {
+  box-shadow: none !important;
+}
+.sd-header__text .sd-title {
+  font-weight: 900 !important;
+}

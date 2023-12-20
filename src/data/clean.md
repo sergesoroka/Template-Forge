@@ -1,15 +1,11 @@
-{"value" : "COMET", "text" : "Doseresponse: COMET" },
-{"value" : "CFE", "text" : "Doseresponse: Colony Forming Efficiency" },
-{"value" : "ALAMARBLUE", "text" : "Doseresponse: Alamar Blue" },
-{"value" : "WST1", "text" : "Doseresponse: WST-1 Assay for Cell Proliferation and Viability" },
-{"value" : "NRU", "text" : "Doseresponse: Neutral Red Uptake Assay" },
-{"value" : "PC_TGA_DEGRADATION", "text" : "Pchem: Degradation behavior by TGA" },
-{"value" : "PC_SURFACECHEMISTRY_FTIR", "text" : "Pchem: Surface Chemistry (FTIR)" },
-{"value" : "COMPOSITION_ICPMS", "text" : "Pchem: Elemental composition by ICP-MS" },
-{"value" : "COMPOSITION", "text" : "Pchem: Define material composition" },
-{"value" : "PC_GRANULOMETRY_DLS", "text" : "Pchem: Hydrodynamic particle size by DLS" },
-{"value" : "PC_GRANULOMETRY_SAXS", "text" : "Pchem: SAXS" },
-{"value" : "PC_GRANULOMETRY_TEM", "text" : "Pchem: Particle size distribution by TEM" },
-{"value" : "DISSOLUTIONIONS", "text" : "Pchem: Dynamic dissolution in lung stimulant fluid" },
-{"value" : "FRAS", "text" : "Doseresponse: Ferric Reduction Ability of Serum" },
-{"value" : "ENZYME", "text" : "Doseresponse: ACETYLCHOLINESTERASE - INHIBITION, ADSORPTION" },
+export const priority = [
+SAMPLE
+SAMPLE PREPARATION
+INSTRUMENT
+ENVIRONMENT
+MONITORING
+CALIBRATION
+OTHER METADATA
+RAW DATA
+PROCESSED DATA
+]

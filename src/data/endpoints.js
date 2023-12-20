@@ -24,3 +24,8 @@ export const endpoints = [
     url: "https://api.ramanchada.ideaconsult.net/template/f2496af3-daa8-4d06-a709-7d43685da314",
   },
 ];
+
+export const priority = [
+  { templateName: "mandatory" },
+  { templateName: "optinal" },
+];

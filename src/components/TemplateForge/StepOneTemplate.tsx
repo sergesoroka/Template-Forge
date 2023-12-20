@@ -6,7 +6,7 @@ import BasicSelect from "../ui/Select";
 import { fetcher } from "../../../lib/fetcher";
 import DynamicFields from "../ui/DynamicFields";
 
-import { endpoints } from "../../data/endpoints";
+import FirstForm from "../SurveyForms/FormFirst";
 
 export default function StepOneTemplate() {
   const [value, setValue] = useState("new");
@@ -19,7 +19,7 @@ export default function StepOneTemplate() {
   return (
     <div>
       <h2 className="font-bold text-xl my-8">Templates</h2>
-      <DynamicFields step="1" />
+      <FirstForm />
     </div>
   );
 }

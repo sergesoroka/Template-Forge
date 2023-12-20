@@ -4,7 +4,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 
 import { selectData } from "../../data/selectData";
-import { endpoints } from "../../data/endpoints";
+import { endpoints, priority } from "../../data/endpoints";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import BasicSelect from "./Select";
@@ -63,7 +63,9 @@ export default function DynamicFields({ step }) {
               <div key={i} className=" mb-8">
                 <div className="flex flex-col gap-8">
                   <RadioButtonsGroup value={value} setValue={setValue} />
-                  {value == "existing" && <BasicSelect values={endpoints} />}
+                  {value == "existing" && (
+                    <BasicSelect values={endpoints} name="Choose template" />
+                  )}
                 </div>
               </div>
             );
@@ -81,7 +83,10 @@ export default function DynamicFields({ step }) {
                     value={val.method}
                     onChange={(e) => handleChange(e, i)}
                   />
-                  <BasicSelect values={endpoints} />
+                  <BasicSelect
+                    values={endpoints}
+                    name="Please select category"
+                  />
                 </div>
                 <TextField
                   className="w-full"
@@ -119,7 +124,7 @@ export default function DynamicFields({ step }) {
                     onChange={(e) => handleChange(e, i)}
                   />
                 </Box>
-                <BasicSelect values={selectData} />
+                <BasicSelect values={selectData} name="Sample" />
                 <Button
                   className="w-[160px]"
                   variant="outlined"
@@ -159,7 +164,7 @@ export default function DynamicFields({ step }) {
                 />
               </Box>
 
-              <BasicSelect values={selectData} />
+              <BasicSelect values={priority} name="Priority" />
               <TextField
                 id="standard-basic"
                 label="Value"
